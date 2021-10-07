@@ -6,6 +6,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -14,6 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.phone.anim.ObjectAnimActivity;
 import com.example.phone.broadcast.BroadcastActivity;
 import com.example.phone.datastorage.DataStorageActivity;
 import com.example.phone.fragment.ContainerActivity;
@@ -141,6 +143,7 @@ public class MainActivity extends AppCompatActivity {
          *
          * @param v The view that was clicked.
          */
+        @SuppressLint("NonConstantResourceId")
         @Override
         public void onClick(View v) {
             Intent intent = null;
@@ -257,7 +260,8 @@ public class MainActivity extends AppCompatActivity {
 
                 case R.id.btn_main_animation:
                     // 跳转到Broadcast演示界面
-                    intent = new Intent(MainActivity.this, AnimationActivity.class);
+                    //intent = new Intent(MainActivity.this, AnimationActivity.class);
+                    intent = new Intent(MainActivity.this, ObjectAnimActivity.class);
                     break;
 
                 default:

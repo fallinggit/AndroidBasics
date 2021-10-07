@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/AndroidProjects/AndroidBasics/Phone/app/src/main/res/layout/activity_alert_dialog.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidProjects/AndroidBasics/Phone/app/src/main/res/layout/activity_object_anim.xml" value="0.25" />
         <entry key="..\:/Android/AndroidProjects/android-study/Phone/app/src/main/res/drawable/list_item.xml" value="0.38229166666666664" />
         <entry key="..\:/Android/AndroidProjects/android-study/Phone/app/src/main/res/layout/activity_listview.xml" value="0.25" />
       </map>

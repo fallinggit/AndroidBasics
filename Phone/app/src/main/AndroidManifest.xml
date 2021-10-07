@@ -14,7 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Phone">
-        <activity android:name=".AnimationActivity"></activity>
+        <activity
+            android:name=".anim.ObjectAnimActivity"
+            android:exported="true" />
+        <activity android:name=".AnimationActivity" />
         <activity android:name=".broadcast.BroadcastActivity2" />
         <activity android:name=".broadcast.BroadcastActivity" />
         <activity android:name=".datastorage.FileActivity" />

@@ -76,8 +76,8 @@ public class BroadcastActivity extends AppCompatActivity {
          * {@link JobScheduler}.
          * <p>
          * If you wish to interact with a service that is already running and previously
-         * bound using {@link Context#bindService(Intent, ServiceConnection, int) bindService()},
-         * you can use {@link #peekService}.
+         * bound using {@link Context #bindService(Intent, ServiceConnection, int) bindService()},
+         * you can use {@link # peekService}.
          *
          * <p>The Intent filters used in {@link Context#registerReceiver}
          * and in application manifests are <em>not</em> guaranteed to be exclusive. They
@@ -103,7 +103,6 @@ public class BroadcastActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
         LocalBroadcastManager.getInstance(this).unregisterReceiver(myBroadcast);
     }
 }

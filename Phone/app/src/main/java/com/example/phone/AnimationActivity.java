@@ -44,15 +44,11 @@ public class AnimationActivity extends AppCompatActivity {
 
         ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(mTvAnimation, "translationY", 0, 500, 200, 100, 50, 0);
         objectAnimator.setDuration(2000);
-        objectAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-            @Override
-            public void onAnimationUpdate(ValueAnimator animation) {
-                // 实际的值自定义 0-100
-                Log.d("aaaa", animation.getAnimatedValue() + "");
-
-                // 动画进度 0-1
-                Log.d("aaaa", "onAnimationUpdate: " + animation.getAnimatedFraction());
-            }
+        objectAnimator.addUpdateListener(animation -> {
+            // 实际的值自定义 0-100
+            Log.d("aaaa", animation.getAnimatedValue() + "");
+            // 动画进度 0-1
+            Log.d("aaaa", "onAnimationUpdate: " + animation.getAnimatedFraction());
         });
         objectAnimator.start();
     }
