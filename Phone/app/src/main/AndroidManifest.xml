@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.phone">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Phone">
+        <activity android:name=".AnimationActivity"></activity>
+        <activity android:name=".broadcast.BroadcastActivity2" />
+        <activity android:name=".broadcast.BroadcastActivity" />
+        <activity android:name=".datastorage.FileActivity" />
+        <activity android:name=".datastorage.SharedPreferencesActivity" />
+        <activity android:name=".datastorage.DataStorageActivity" />
+        <activity android:name=".HandlerActivity" />
+        <activity android:name=".EventActivity" />
+        <activity android:name=".fragment.ContainerActivity" />
+        <activity
+            android:name=".jump.BActivity"
+            android:label="B"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="android.intent.action.BActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".jump.AActivity"
+            android:label="A"
+            android:launchMode="standard" />
+        <activity android:name=".LifeActivity" />
+        <activity android:name=".PopupWindowActivity" />
+        <activity android:name=".CustomAlertDialogActivity" />
+        <activity android:name=".ProgressActivity" />
+        <activity android:name=".AlertDialogActivity" />
+        <activity android:name=".MainActivity2">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".ToastActivity" />
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".recycleview.WaterFallRecycleViewActivity" />
+        <activity android:name=".recycleview.GridRecycleViewActivity" />
+        <activity android:name=".recycleview.HorRecycleViewActivity" />
+        <activity android:name=".recycleview.LinearRecycleViewActivity" />
+        <activity android:name=".recycleview.RecycleViewActivity" />
+        <activity android:name=".ImageViewActivity" />
+        <activity android:name=".CheckBoxActivity" />
+        <activity android:name=".RadioButtonActivity" />
+        <activity android:name=".EditTextActivity" />
+        <activity android:name=".ButtonActivity" />
+        <activity android:name=".TextViewActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".listview.ListViewActivity" />
+        <activity android:name=".gridview.GridViewActivity" />
+    </application>
+
+</manifest>
